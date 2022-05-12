@@ -1,0 +1,64 @@
+import random
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+pasta = 'imgs_geradas/1fundo/fundo1.png'
+
+
+class Fundo1:
+
+    def __init__(self, x, y):
+        branco = 255
+
+        fundo_r = random.randint(0, 255)
+        fundo_g = random.randint(0, 255)
+        fundo_b = random.randint(0, 255)
+
+        fundoescuro_r = random.randint(0, 255)
+        fundoescuro_g = random.randint(0, 255)
+        fundoescuro_b = random.randint(0, 255)
+
+        def geraPixels(matriz,
+                       fundo,
+                       fundoescuro):
+
+            matriz[0:50, 0:60] = fundo
+            matriz[42:50, 0:60] = fundoescuro
+
+            return matriz
+
+        r = np.zeros((50, 60), dtype=np.float32)
+        g = np.zeros((50, 60), dtype=np.float32)
+        b = np.zeros((50, 60), dtype=np.float32)
+
+        # Linha x Coluna X layers  matriz nula
+        m = np.zeros((50, 60, 3), 'uint8')
+
+        r = geraPixels(r,
+                       fundo_r,
+                       fundoescuro_r)
+
+        g = geraPixels(g,
+                       fundo_g,
+                       fundoescuro_g)
+
+        b = geraPixels(b,
+                       fundo_b,
+                       fundoescuro_b)
+
+        # #atribui matriz as camadas de m
+        for i in range(0, 60):
+            m[0:i, 0:i, 0] = random.randint(0, 255)
+            m[0:i, 0:i, 1] = random.randint(0, 255)
+            m[0:i, 0:i, 2] = random.randint(0, 255)
+
+
+        plt.figure(figsize=(x, y))
+        plt.imshow(m, interpolation='nearest')
+        plt.axis('off')
+        # plt.savefig(pasta, bbox_inches='tight', pad_inches=0)
+        plt.show()
+
+
+fundo = Fundo1(5, 4)

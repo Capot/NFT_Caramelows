@@ -1,0 +1,76 @@
+Projeto: Caramelows Pixel
+
+Protagonista: Frida e Tieta
+
+*Inserir conhecimento de:
+- Python
+- RGB
+- viralatas
+- ONGs
+
+Descrição da Cidade
+#############################################
+
+ETAPAS:
+17-28 de março	Desenvolvimento da lógica
+21 - de março	Criação da arte
+
+#############################################
+
+ADEREÇOS:
+
+Fundos:
+	azul claro
+	vermelho claro
+	verde claro
+	roxo claro
+	
+	Muro bandeira do Brasil
+	Favela
+	Carrocinha
+
+Chapeu:
+	vazio
+	cangaceiro
+	cartola
+	boina
+
+Fumo:
+	vazio
+	cigarro1
+	cigarro2
+	cachimbo
+	viper
+
+Coleira:
+	vazio
+	Coleira cor 1
+	Coleira cor 2
+
+Roupa:
+	vermelho
+	azul
+	verde
+
+Oculos:
+	vazio
+	preto
+	azul
+	verde
+
+Simbolo python
+
+######################################################
+- Discord
+- Twitter
+- Site
+
+
+######################################################
+##############	DROP	##################
+##########################################
+
+- Polices
+- Criar Carteira
+- Mintar
+
